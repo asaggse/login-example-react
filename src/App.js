@@ -15,7 +15,11 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // code to handle login
+    if (username === "admin" && password === "password") {
+      alert("Login successful!");
+    } else {
+      alert("Invalid username or password");
+    }
   };
 
   return (
